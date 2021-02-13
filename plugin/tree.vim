@@ -7,7 +7,6 @@ let g:loaded_netrw = 1
 let g:loaded_netrwPlugin = 1
 
 lua require'nvim-tree'.reset_highlight()
-hi def link NvimTreePopup Normal
 
 augroup NvimTree
   au BufWritePost * lua require'nvim-tree'.refresh()
