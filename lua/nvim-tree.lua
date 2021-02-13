@@ -126,7 +126,6 @@ function M.on_enter()
     api.nvim_command('cd '..bufname)
   end
   local should_open = vim.g.nvim_tree_auto_open == 1 and (bufname == '' or is_dir)
-  colors.setup()
   lib.init(should_open, should_open)
 end
 
